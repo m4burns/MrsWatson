@@ -221,6 +221,11 @@ static void _processMidiMetaEvent(void *item, void *userData)
             *finishedReading = true;
             break;
 
+		case MIDI_META_TYPE_CUE_POINT:
+			logInfo("Got cue point event -- sleeping for 0.1 seconds");
+			taskTimerSleep(100);
+			break;
+
         default:
             logWarn("Don't know how to process MIDI meta event of type 0x%x", midiEvent->status);
             break;
