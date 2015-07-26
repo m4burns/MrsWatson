@@ -310,7 +310,7 @@ extern "C" {
 
         case audioMasterGetCurrentProcessLevel:
             // We are not a multithreaded app and have no GUI, so this is unsupported.
-            result = kVstProcessLevelUnknown;
+            result = kVstProcessLevelOffline;
             break;
 
         case audioMasterGetAutomationState:
