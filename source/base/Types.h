@@ -68,7 +68,7 @@ typedef unsigned char byte;
 #define strcasecmp _stricmp
 #define strdup _strdup
 #define unlink _unlink
-#define snprintf _snprintf
+//#define snprintf _snprintf
 #define isatty _isatty
 #define chdir _chdir
 #define unlink _unlink
